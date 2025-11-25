@@ -1,38 +1,23 @@
 {
   "name": "server",
   "version": "1.0.0",
+  "description": "New package for MongoDB example",
   "main": "index.js",
   "scripts": {
-    "start": "node index.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint .",
-    "format": "prettier --single-quote --check .",
-    "prepare": "cd ../ && husky install server/.husky",
-    "dev": "nodemon --experimental-modules index.mjs"
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "mongo-express-rest-api-complete"
+  },
+  "author": "MongoDB page & Dan Turek",
+  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.18.2",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
     "express-async-errors": "^3.1.1",
-    "mongodb": "^4.13.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.0.0",
-    "husky": "^7.0.2",
-    "lint-staged": "^11.2.3",
-    "nodemon": "^2.0.12",
-    "prettier": "^2.4.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --single-quote --write",
-      "eslint --fix"
-    ]
+    "mongodb": "^7.0.0",
+    "nodemon": "^3.1.11"
   }
 }
