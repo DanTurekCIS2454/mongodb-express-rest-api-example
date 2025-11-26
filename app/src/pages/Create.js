@@ -3,7 +3,7 @@ import { H2 } from "@leafygreen-ui/typography";
 import TextInput from '@leafygreen-ui/text-input';
 import TextArea from "@leafygreen-ui/text-area";
 import FormFooter from "@leafygreen-ui/form-footer";
-import Toast from "@leafygreen-ui/toast";
+import { Toast } from "@leafygreen-ui/toast";
 import { css } from "@leafygreen-ui/emotion";
 import { baseUrl } from "../config";
 

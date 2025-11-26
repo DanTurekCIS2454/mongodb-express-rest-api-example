@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ],
+    // Add this preset to handle TypeScript syntax
+    "@babel/preset-typescript" 
+  ]
+}
